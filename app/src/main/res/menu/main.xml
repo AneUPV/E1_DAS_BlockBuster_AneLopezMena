@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/cerrarSesion"
+        android:orderInCategory="100"
+        android:title="@string/cerrar"
+        app:showAsAction="ifRoom" />
+
+    <item android:title="@string/cambiarIdioma">
+        <menu>
+
+            <item
+                android:id="@+id/idioma_euskera"
+                android:title="@string/euskera" />
+            <item
+                android:id="@+id/idioma_español"
+                android:title="@string/castellano" />
+            <item
+                android:id="@+id/idioma_ingles"
+                android:title="@string/ingles" />
+
+        </menu>
+
+
+    </item>
+    <item
+        android:id="@+id/preferencias"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:installLocation="preferExternal" >
+    <!-- Indicar permisos que pedirá la aplicación en el manifest.xml -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission._EXTERNAL_STORAGE" />
+    <!-- Indicar permisos que pedirá la aplicación para el trailer -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/TemaAplicacion"
+        tools:targetApi="31" >
+        <activity
+            android:name=".activities.Act_Preferencias"
+            android:exported="false" />
+       <activity
+            android:name=".activities.Act_MenuPrincipal"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/TemaAplicacion.NoActionBar" />
+        <activity
+            android:name=".activities.Act_InfoPelicula"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Act_AñadirPelicula"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Act_ModificarPelicula"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Act_Login"
+            android:exported="false" />
+
+        <activity
+
+            android:name=".activities.Act_Registro"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Frag_Simplificado">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black">
+
+            <ImageView
+                android:id="@+id/s_caratula"
+                android:layout_width="344dp"
+                android:layout_height="445dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/post_caballero_luna"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="24dp"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintStart_toStartOf="@+id/s_caratula"
+                app:layout_constraintTop_toTopOf="@+id/s_caratula" >
+
+                <ImageView
+                    android:id="@+id/b_sinopsis"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="mostrarSinopsis"
+                    android:src="@drawable/icono_nuevos" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="312dp"
+                android:layout_height="160dp"
+                android:background="@color/black_alpha"
+                android:backgroundTint="@color/black_alpha"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/s_caratula"
+                app:layout_constraintStart_toStartOf="@+id/s_caratula">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/c_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/s_titulo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:autoSizeTextType="uniform"
+                        android:paddingTop="30dp"
+                        android:text="@string/t1"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold|italic"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/s_director"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:autoSizeTextType="uniform"
+                        android:text="@string/t2"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="@+id/s_titulo"
+                        app:layout_constraintTop_toBottomOf="@+id/s_titulo" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

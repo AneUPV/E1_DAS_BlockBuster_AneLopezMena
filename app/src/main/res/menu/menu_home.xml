@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/compartir"
+        android:checkable="false"
+        android:icon="@drawable/share_film"
+        android:title="@string/compartir"
+        app:actionViewClass="android.widget.ImageView"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/modificar"
+        android:title="@string/modificar"/>
+    <item
+        android:id="@+id/eliminar"
+        android:title="@string/eliminar"/>
+
+
+
+
+</menu>

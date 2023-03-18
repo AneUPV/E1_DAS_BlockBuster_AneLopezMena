@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingHorizontal="20dp"
+    tools:context=".activities.Act_Registro">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="match_parent"
+            android:layout_height="183dp"
+            app:srcCompat="@drawable/logo2" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/id_textoRegistro"
+            style="@style/titulos"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:text="@string/id_textoRegistro"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+        <EditText
+            android:id="@+id/id_usuario"
+            style="@style/campos"
+            android:drawableStart="@drawable/person_registro"
+            android:hint="@string/id_usuario"
+
+            app:layout_constraintEnd_toEndOf="@+id/id_textoRegistro"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/id_textoRegistro"
+            app:layout_constraintTop_toBottomOf="@+id/id_textoRegistro"></EditText>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <EditText
+            android:id="@+id/id_email"
+            style="@style/campos"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:hint="@string/id_email"
+            android:inputType="textEmailAddress"
+
+            app:layout_constraintEnd_toEndOf="@+id/id_usuario"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/id_usuario"
+            app:layout_constraintTop_toBottomOf="@+id/id_usuario" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <EditText
+            android:id="@+id/id_contrasena"
+            style="@style/campos"
+            android:drawableStart="@drawable/baseline_key_24"
+            android:hint="@string/id_contrasena"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/id_email"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="@+id/id_email"
+            app:layout_constraintTop_toBottomOf="@+id/id_email"></EditText>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <EditText
+            android:id="@+id/id_recontrasena"
+            style="@style/campos"
+            android:drawableStart="@drawable/baseline_black"
+            android:hint="@string/id_recontrasena"
+            android:inputType="textPassword"
+
+            app:layout_constraintEnd_toEndOf="@+id/id_contrasena"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/id_contrasena"
+            app:layout_constraintTop_toBottomOf="@+id/id_contrasena"></EditText>
+
+        <Button
+            android:id="@+id/id_botonRegistro"
+            style="@style/boton_gris"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:onClick="registro"
+            android:text="@string/id_botonRegistro"
+            app:layout_constraintEnd_toEndOf="@+id/id_recontrasena"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/id_recontrasena"
+            app:layout_constraintTop_toBottomOf="@+id/id_recontrasena"></Button>
+
+        <TextView
+            android:id="@+id/id_yaRegis"
+            style="@style/subtitulos"
+            android:text="@string/id_yaRegis"
+            android:paddingBottom="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/id_botonLogin"
+            app:layout_constraintEnd_toEndOf="@+id/id_botonLogin"
+            app:layout_constraintHorizontal_bias="0.117"
+            app:layout_constraintStart_toStartOf="@+id/id_botonLogin"></TextView>
+
+        <Button
+            android:id="@+id/id_botonLogin"
+            style="@style/boton_negro"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:paddingTop="-10dp"
+            android:onClick="login"
+            android:text="@string/id_botonLogin"
+
+            app:layout_constraintEnd_toEndOf="@+id/id_botonRegistro"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/id_botonRegistro"
+            app:layout_constraintTop_toBottomOf="@+id/id_botonRegistro"></Button>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

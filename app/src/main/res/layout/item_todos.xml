@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center|top"
+    android:background="#00000000"
+    android:foregroundGravity="top|center"
+    android:padding="5dp"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/id_cv"
+        android:layout_width="115dp"
+        android:layout_height="168dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black">
+
+            <ImageView
+                android:id="@+id/id_caratula"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="5dp"
+                android:paddingStart="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/post_judgement_of_paris" />
+
+            <TextView
+                android:id="@+id/id_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:autoSizeTextType="uniform"
+                android:background="#B5000000"
+                android:backgroundTint="#000000"
+                android:breakStrategy="high_quality"
+                android:cursorVisible="true"
+                android:gravity="center"
+                android:keyboardNavigationCluster="true"
+                android:textAlignment="center"
+                android:textColor="@color/ic_launcher_background"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/black"
+                android:textStyle="bold"
+                app:circularflow_defaultRadius="5dp"
+                app:circularflow_radiusInDP="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/id_titulo2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:autoSizeTextType="uniform"
+                android:breakStrategy="high_quality"
+                android:cursorVisible="true"
+                android:gravity="center"
+                android:keyboardNavigationCluster="true"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/black"
+                android:textStyle="bold"
+                app:circularflow_defaultRadius="5dp"
+                app:circularflow_radiusInDP="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/bordeArriba"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/black"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</GridLayout>

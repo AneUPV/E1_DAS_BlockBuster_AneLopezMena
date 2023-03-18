@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="5dp"
+    android:orientation="horizontal"
+    android:paddingEnd="5dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:paddingLeft="8dp"
+        tools:context=".activities.Act_MenuPrincipal">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/info_infoSecundaria"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autoSizeTextType="uniform"
+                            android:autoText="true"
+                            android:background="@color/black"
+                            android:fontFamily="@font/montserrat"
+                            android:paddingStart="12dp"
+                            android:paddingTop="2dp"
+                            android:paddingEnd="12dp"
+                            android:text="@string/modif"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/edit_titulo"
+                            style="@style/titulos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="8dp"
+                            android:enabled="false"
+                            android:text="TÍTULO"
+                            android:textAllCaps="true" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/edit_caratula"
+                            android:layout_width="179dp"
+                            android:layout_height="268dp"
+                            android:layout_marginEnd="6dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/post_buscando_a_nemo" />
+
+                        <CheckBox
+                            android:id="@+id/edit_visto"
+                            android:layout_width="182dp"
+                            android:layout_height="46dp"
+                            android:background="#D3000000"
+                            android:backgroundTint="#A4000000"
+                            android:buttonTint="@color/white"
+                            android:paddingHorizontal="5dp"
+                            android:paddingStart="5dp"
+                            android:paddingLeft="100dp"
+                            android:text="@string/visto"
+                            android:textColor="#FFFFFF"
+                            android:textColorHighlight="#FFFFFF"
+                            android:textSize="18dp"
+                            android:textStyle="bold|italic"
+                            app:layout_constraintBottom_toBottomOf="@+id/edit_caratula"
+                            app:layout_constraintEnd_toEndOf="@+id/edit_caratula"
+                            app:layout_constraintHorizontal_bias="0.617"
+                            app:layout_constraintStart_toStartOf="@+id/edit_caratula" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="10dp"
+                    android:background="@drawable/search_view_bg">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="10dp">
+
+                            <TextView
+                                android:id="@+id/itexto"
+                                style="@style/cabeceras"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/anyo" />
+
+                            <EditText
+                                android:id="@+id/edit_anyo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:background="@drawable/search_view_bg"
+                                android:inputType="number"
+                                android:maxLength="4"
+                                android:paddingHorizontal="5dp"
+                                android:paddingStart="15dp"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp"
+                                android:scrollbars="vertical"
+                                android:text="@string/anyo" />
+
+                            <TextView
+                                android:id="@+id/texto_g"
+                                style="@style/cabeceras"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/info_genero" />
+
+                            <EditText
+                                android:id="@+id/edit_genero"
+                                style="@style/cabeceras"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/search_view_bg"
+                                android:inputType="textShortMessage|textLongMessage|textPersonName|textImeMultiLine"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="15dp"
+                                android:paddingEnd="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingBottom="15dp"
+                                android:text="@string/genero" />
+
+                            <TextView
+                                android:id="@+id/t_duracion2"
+                                style="@style/cabeceras"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/info_duracion"
+                                android:textColor="@color/black" />
+
+                            <EditText
+                                android:id="@+id/edit_duracion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/search_view_bg"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:paddingStart="8dp"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="15dp"
+                                android:paddingEnd="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingBottom="15dp"
+                                android:text="@string/duracion" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="144dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="10dp">
+
+                        <TextView
+                            android:id="@+id/indicator_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:background="@color/colorPrimary"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <TextView
+                            android:id="@+id/texto_v"
+                            style="@style/cabeceras"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:paddingStart="4dp"
+                            android:paddingEnd="4dp"
+                            android:text="@string/valoracion"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="25dp"
+                            app:layout_constraintBottom_toTopOf="@+id/edit_valoracion"
+                            app:layout_constraintEnd_toEndOf="@+id/edit_valoracion"
+                            app:layout_constraintStart_toStartOf="@+id/edit_valoracion" />
+
+                        <RatingBar
+                            android:id="@+id/edit_valoracion"
+                            style="@style/Widget.AppCompat.RatingBar"
+                            android:layout_width="232dp"
+                            android:layout_height="43dp"
+                            android:layout_marginTop="32dp"
+                            android:layout_marginBottom="32dp"
+                            android:foregroundGravity="left"
+                            android:foregroundTint="#000000"
+                            android:indeterminate="false"
+                            android:isIndicator="false"
+                            android:numStars="5"
+                            android:progressTint="@color/black"
+                            android:soundEffectsEnabled="true"
+                            android:textAlignment="gravity"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.506"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/info_infoSecundaria2"
+                            style="@style/boton_negro2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autoSizeTextType="uniform"
+                            android:background="@color/black"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/sinopsis"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/edit_actores" />
+
+                        <EditText
+                            android:id="@+id/edit_trama"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/search_view_bg"
+                            android:ems="10"
+                            android:fontFamily="@font/montserrat"
+                            android:inputType="textMultiLine"
+                            android:onClick="volver"
+                            android:paddingStart="15dp"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="15dp"
+                            android:text="Name"
+                            app:layout_constraintEnd_toEndOf="@+id/info_infoSecundaria2"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="@+id/info_infoSecundaria2"
+                            app:layout_constraintTop_toBottomOf="@+id/info_infoSecundaria2" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/texto_d"
+                            style="@style/boton_negro2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autoSizeTextType="uniform"
+                            android:background="@color/black"
+                            android:paddingLeft="20dp"
+                            android:text="@string/director"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/white"
+                            android:textColorHighlight="@color/black" />
+
+                        <EditText
+                            android:id="@+id/edit_director"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/azul_oscuro"
+                            android:fontFamily="@font/montserrat"
+                            android:inputType="textMultiLine"
+                            android:enabled="false"
+                            android:paddingStart="15dp"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="15dp"
+                            android:paddingEnd="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="15dp"
+                            android:text="@string/director"
+                            android:textColor="@color/white"
+                            app:layout_constraintEnd_toEndOf="@+id/id_actores"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="@+id/id_actores"
+                            app:layout_constraintTop_toBottomOf="@+id/id_actores" />
+
+                        <TextView
+                            android:id="@+id/id_actores"
+                            style="@style/boton_negro2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autoSizeTextType="uniform"
+                            android:autoText="true"
+                            android:background="@color/black"
+                            android:paddingLeft="20dp"
+                            android:text="@string/actores"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/white"
+                            android:textColorHighlight="@color/black" />
+
+                        <EditText
+                            android:id="@+id/edit_actores"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:inputType="textMultiLine"
+                            android:padding="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="50dp"
+                            android:paddingEnd="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="15dp"
+                            android:text="Name"
+                            app:layout_constraintEnd_toEndOf="@+id/id_actores"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="@+id/id_actores"
+                            app:layout_constraintTop_toBottomOf="@+id/id_actores" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp" />
+
+                        <TextView
+                            android:id="@+id/url"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="14dp"
+                            android:autoSizeMaxTextSize="20dp"
+                            android:autoText="true"
+                            android:paddingTop="2dp"
+                            android:paddingEnd="15dp"
+                            android:paddingBottom="2dp"
+                            android:text="@string/info_url"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/imageView3"
+                                    android:layout_width="54dp"
+                                    android:layout_height="51dp"
+                                    android:layout_marginStart="16dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/youtube" />
+
+                                <EditText
+                                    android:id="@+id/edit_trailer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/search_view_bg"
+                                    android:ems="10"
+                                    android:inputType="textMultiLine"
+                                    android:paddingStart="75dp"
+                                    android:paddingTop="15dp"
+                                    android:paddingEnd="15dp"
+                                    android:paddingBottom="15dp"
+                                    android:text="Name"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView3" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/edit_guardar"
+                            style="@style/boton_rojo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="actualizarDatos"
+                            android:text="@string/boton_guardarCambios"
+                            android:textSize="30dp" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

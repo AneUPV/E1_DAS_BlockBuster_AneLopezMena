@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Nodo raiz-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="Mis datos">
+
+        <EditTextPreference
+            app:key="nombre"
+            app:title="@string/nombredeusuario"
+            app:summary="@string/eligenickname"
+            android:dialogTitle="@string/minick"
+            android:icon="@drawable/usuario_red"
+            android:dialogIcon="@drawable/usuario_red">
+        </EditTextPreference>
+
+        <ListPreference
+            app:key="miidioma"
+            app:dialogTitle="@string/idiomaapp"
+            app:entries="@array/idiomas"
+            android:icon="@drawable/idioma"
+            app:entryValues="@array/codigoidiomas"
+            app:summary="@string/eligeidioma"
+            app:title="@string/idiomaapp" >
+        </ListPreference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.Act_MenuPrincipal">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/id_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/id_tabNuevos"
+            android:icon="@drawable/icono_nuevos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="NUEVOS" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/id_tabTop"
+            android:icon="@drawable/icono_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOP RANKED" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/id_tabFavoritos"
+            android:icon="@drawable/icono_favoritos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FAVORITOS" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/id_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

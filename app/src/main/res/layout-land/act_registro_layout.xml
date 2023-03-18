@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="0dp"
+    tools:context=".activities.Act_Registro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="15dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp">
+
+                        <TextView
+                            android:id="@+id/id_textoRegistro"
+                            style="@style/titulos"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/id_textoRegistro" />
+                    </androidx.cardview.widget.CardView>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="13dp">
+
+                        <EditText
+                            android:id="@+id/id_usuario"
+                            style="@style/campos"
+                            android:drawableStart="@drawable/person_registro"
+                            android:hint="@string/id_usuario"></EditText>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp" />
+
+                        <EditText
+                            android:id="@+id/id_email"
+                            style="@style/campos"
+                            android:drawableStart="@drawable/baseline_email_24"
+                            android:hint="@string/id_email"
+                            android:inputType="textEmailAddress" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp" />
+
+                        <EditText
+                            android:id="@+id/id_contrasena"
+                            style="@style/campos"
+                            android:drawableStart="@drawable/baseline_key_24"
+                            android:hint="@string/id_contrasena"
+                            android:inputType="textPassword"></EditText>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp" />
+
+                        <EditText
+                            android:id="@+id/id_recontrasena"
+                            style="@style/campos"
+                            android:drawableStart="@drawable/baseline_black"
+                            android:hint="@string/id_recontrasena"
+                            android:inputType="textPassword"></EditText>
+
+                        <Button
+                            android:id="@+id/id_botonRegistro"
+                            style="@style/boton_gris"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="registro"
+                            android:text="@string/id_botonRegistro"></Button>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:paddingHorizontal="15dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="15dp">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="201dp"
+                        android:layout_height="126dp"
+                        app:srcCompat="@drawable/logo2" />
+
+                    <Button
+                        android:id="@+id/id_botonLogin"
+                        style="@style/boton_negro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="login"
+                        android:paddingTop="-15dp"
+                        android:paddingBottom="-15dp"
+                        android:text="@string/id_botonLogin"></Button>
+
+                    <TextView
+                        android:id="@+id/id_yaRegis"
+                        style="@style/subtitulos"
+                        android:paddingTop="-5dp"
+                        android:paddingBottom="-15dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/id_yaRegis"
+                        android:textAlignment="center"></TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

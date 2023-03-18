@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.entregaindividual_1_anelopezmena.fragments.ui.todos.Frag_Todos"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_todos_drawer" >
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <argument
+            android:name="usuario"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.entregaindividual_1_anelopezmena.fragments.ui.nested.Frag_Nested"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_nested_drawer" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.entregaindividual_1_anelopezmena.fragments.ui.sin_ver.Frag_SinVer"
+        android:label="@string/sinVer"
+        tools:layout="@layout/fragment_slideshow" />
+</navigation>

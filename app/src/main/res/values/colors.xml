@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--   color for the app bar and other primary UI elements -->
+    <color name="colorPrimary">#388181</color>
+    <!--   a darker variant of the primary color, used for the status bar (on Android 5.0+) and contextual app bars -->
+    <color name="colorPrimaryDark">@color/azul_oscuro2</color>
+    <!--   a secondary color for controls like checkboxes and text fields -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#6200FF</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="ocre" >#101010</color>
+    <color name="azul_cian">#45C4B0</color>
+    <color name="transparente">#00000000</color>
+    <color name="fondoNoche">#9099A2</color>
+
+
+    <color name="title_color">#ffffff</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gris_claro" >#E6E6E6</color>
+    <color name="colorAccent">@color/azul_turquesa</color>
+    <color name="median_black">#292929</color>
+    <color name="black">#FF000000</color>
+    <color name="black_alpha">#BF000000</color>
+    <color name="granate">#9F0728</color>
+    <color name="rojoNeon">#FC4444</color>
+
+    <color name="gris_azulado">#F2E3D5</color>
+    <color name="verde">#5D8A66</color>
+    <color name="azul_claro">#3CA6A6</color>
+    <color name="azul_turquesa">#0F6A75</color>
+    <color name="azul_oscuro">#024959</color>
+    <color name="azul_oscuro2">#012E40</color>
+    <color name="morado">#45214A</color>
+    <color name="light_blue">#DDF5EE</color>
+
+
+</resources>
