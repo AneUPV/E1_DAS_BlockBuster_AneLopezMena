@@ -352,32 +352,32 @@ public class Gestor_DB extends SQLiteOpenHelper {
                 "Thomas Anderson es un brillante programador de una respetable compañía de software. Pero fuera del trabajo es Neo, un hacker que un día recibe una misteriosa visita.",
                 "1999", 1, (float) 5.0, "178 min", "https://www.youtube.com/watch?v=Pl_H2Lmjn6k");
 
-        // Ejemplo 10: Matrix Resurrections
+        // Ejemplo 9: Matrix Resurrections
         insertarPelícula("Matrix Resurrections", "android.resource://com.example.entregaindividual_1_anelopezmena/drawable/post_matrix_resurrections", "Lana Wachowski",
                 "Keanu Reeves, Carrie-Anne Moss, Neil Patrick Harris, Jada Pinkett Smith, Yahya Abdul-Mateen II, Jessica Henwick, Priyanka Chopra, Ellen Hollman, Jonathan Groff, Brian J. Smith, Max Riemelt, Lambert Wilson, Andrew Caldwell, Erendira Ibarra, Toby Onwumere, Christopher S. Reid, Andrew Koponen, Thomas Dalby, James D. Weston II, John Lobato, William W. Barbour, Cabran E. Chamberlain, Christina Ricci",
                 "Ciencia ficción. Acción. Drama | Cyberpunk. Mundo virtual. Secuela","Neo vive una vida normal y corriente en San Francisco mientras su terapeuta le prescribe pastillas azules. Hasta que Morfeo le ofrece la pastilla roja y vuelve a abrir su mente al mundo de Matrix.", "2021", 1, (float) 4.5,
                 "148 min", "https://www.youtube.com/watch?v=GF3aGovu8To");
 
-        // Ejemplo 11: Misión Imposible: FallOut
+        // Ejemplo 10: Misión Imposible: FallOut
         insertarPelícula("Misión imposible: Fallout ", "android.resource://com.example.entregaindividual_1_anelopezmena/drawable/post_mision_imposible_fallout", "Christopher McQuarrie",
                 "Tom Cruise, Rebecca Ferguson, Henry Cavill, Simon Pegg, Ving Rhames, Vanessa Kirby, Michelle Monaghan, Alec Baldwin, Angela Bassett, Sian Brooke, Sean Harris, Wes Bentley, Frederick Schmidt, Liang Yang, Kristoffer Joner", "Thriller. Acción | Espionaje. Secuela",
-                "Sexta entrega de la saga. En esta ocasión presenta a Ethan Hunt (Tom Cruise) y su equipo IMF (Alec Baldwin, Simon Pegg, Ving Rhames), con algunos aliados conocidos (Rebecca Ferguson, Michelle Monaghan), en una lucha contrarreloj después de que una misión salga mal.", "", 1, (float) 2.2,
+                "Sexta entrega de la saga. En esta ocasión presenta a Ethan Hunt (Tom Cruise) y su equipo IMF (Alec Baldwin, Simon Pegg, Ving Rhames), con algunos aliados conocidos (Rebecca Ferguson, Michelle Monaghan), en una lucha contrarreloj después de que una misión salga mal.", "2018", 1, (float) 2.2,
                 "147 min", "https://www.youtube.com/watch?v=pXsYxWccEps");
 
-        // Ejemplo 12: Muerte en el Nilo
+        // Ejemplo 11: Muerte en el Nilo
         insertarPelícula("Muerte en el Nilo ", "android.resource://com.example.entregaindividual_1_anelopezmena/drawable/post_muerte_en_el_nilo", "Kenneth Branagh",
                 "Kenneth Branagh, Gal Gadot, Letitia Wright, Armie Hammer, Annette Bening, Ali Fazal, Sophie Okonedo, Tom Bateman, Emma Mackey, Dawn French, Rose Leslie, Jennifer Saunders, Russell Brand, Nikkita Chadha",
                 "Intriga. Thriller | Crimen. Años 30","Basada en la novela de Agatha Christie, publicada en 1937. \"Muerte en el Nilo\" es un thriller de misterio dirigido por Kenneth Branagh sobre el caos emocional y las consecuencias letales " +
                         "que provocan los amores obsesivos. Las vacaciones egipcias del detective belga Hércules Poirot, a bordo de un glamuroso barco de vapor, se ven alteradas por la búsqueda de un asesino cuando la idílica luna de miel de una pareja perfecta se ve truncada de la forma más trágica.", "2022", 1, (float) 5,
                 "127 min", "https://www.youtube.com/watch?v=2HQPNRtMbJ0");
 
-        // Ejemplo 13: Puñales por la espalda
+        // Ejemplo 12: Puñales por la espalda
         insertarPelícula("Puñales por la espalda", "android.resource://com.example.entregaindividual_1_anelopezmena/drawable/post_punales_por_la_espalda", "Rian Johnson", "Daniel Craig, Ana de Armas, Chris Evans, Jamie Lee Curtis, Toni Collette, Don Johnson, Michael Shannon, Christopher Plummer, Lakeith Stanfield, Katherine Langford, Jaeden Martell, Riki Lindhome, Edi Patterson, Raúl Castillo, Frank Oz, M. Emmet Walsh",
                 "Intriga | Crimen. Comedia negra",
                 "Cuando el renombrado novelista de misterio Harlan Thrombey (Christopher Plummer) es encontrado muerto en su mansión, justo después de la celebración familiar de su 85 cumpleaños, el inquisitivo y cortés detective Benoit Blanc (Daniel Craig) es misteriosamente reclutado para investigar el asunto. Se moverá entre una red de pistas falsas y mentiras interesadas para tratar de descubrir la verdad tras la muerte del escritor.",
                 "2019", 1, (float) 5.0, "130 min", "https://www.youtube.com/watch?v=dzt1BPkm97I");
 
-        // Ejemplo 14: Robin Hood
+        // Ejemplo 13: Robin Hood
         insertarPelícula("Robin Hood", "android.resource://com.example.entregaindividual_1_anelopezmena/drawable/post_robin_hood", "Ridley Scott",
                 "Russell Crowe, Cate Blanchett, Oscar Isaac, Mark Strong, Max von Sydow, William Hurt, Kevin Durand, Danny Huston, Matthew Macfadyen, Léa Seydoux, Eileen Atkins, Mark Addy, Scott Grimes, Jonathan Zaccaï, Douglas Hodge, Arthur Darvill, Alan Doyle, Simon McBurney, Bronson Webb, Robert Pugh, Gerard McSorley, Velibor Topic, Denis Ménochet, Luke Evans, Mark Lewis Jones",
                 "Aventuras. Acción | Siglo XIII. Edad Media. Capa y espada. Cine épico",
@@ -385,6 +385,15 @@ public class Gestor_DB extends SQLiteOpenHelper {
                       "Loxley (Douglas Hodge) antes de morir: llevar su espada a su padre, Sir Walter Loxley (Max Von Sydow). Allí conoce a Lady Marion (Cate Blanchett), la viuda de Loxley. Mientras tanto, en Inglaterra, reina Juan Sin Tierra (Oscar Isaac), un rey sin carácter e incapaz de hacer frente tanto a las rebeliones internas como a las amenazas externas urdidas por el pérfido Godfrey " +
                       "(Mark Strong). El objetivo de Robin y sus hombres será impedir una sangrienta guerra civil y devolver la gloria a su país.", "2010", 1, (float) 3.5,
                 "131 min", "https://www.youtube.com/watch?v=xc3Ggjd5wmI");
+
+        // Ejemplo 14: Bajocero
+        insertarPelícula("Bajocero", "android.resource://com.example.entregaindividual_1_anelopezmena/drawable/post_bajocero", "Lluís Quílez",
+                "Javier Gutiérrez, Karra Elejalde, Luis Callejo, Patrick Criado, Andrés Gertrudix, Isak Férriz, Miquel Gelabert, Édgar Vittorino, Florín Opritescu, Ángel Solo, Àlex Monner, Sebastián Haro",
+                "Thriller. Intriga | Policíaco. Crimen",
+                "En una fría noche cerrada de invierno, en mitad de una carretera despoblada, un furgón policial blindado es asaltado durante un traslado de presos. Alguien busca a alguien de su interior." +
+                      " Martín, el policía conductor del furgón, consigue atrincherarse dentro del cubículo blindado con los reclusos. Obligado a entenderse con sus enemigos naturales, Martín tratará de sobrevivir " +
+                      "y cumplir con su deber en una larga noche de pesadilla en el que se pondrán a prueba incluso sus principios. ", "2021", 1, (float) 3.2,
+                 "106 min", "https://www.youtube.com/watch?v=HMIpTQuNA-U");
         // Cerrar DB
         MyDB.close();
     }

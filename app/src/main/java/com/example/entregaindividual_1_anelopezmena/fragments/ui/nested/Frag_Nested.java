@@ -101,38 +101,37 @@ public class Frag_Nested extends Fragment {
         listaValorados = new ArrayList<>();
 
         // Añadir elementos de muestra
+        listaNuevos.add(new ChildModelClass(R.drawable.post_judgement_of_paris));
         listaNuevos.add(new ChildModelClass(R.drawable.post_in_time));
+        listaNuevos.add(new ChildModelClass(R.drawable.post_inception));
         listaNuevos.add(new ChildModelClass(R.drawable.post_mision_imposible_fallout));
         listaNuevos.add(new ChildModelClass(R.drawable.post_matrix_resurrections));
         listaNuevos.add(new ChildModelClass(R.drawable.post_muerte_en_el_nilo));
-        listaNuevos.add(new ChildModelClass(R.drawable.post_robin_hood));
-        listaNuevos.add(new ChildModelClass(R.drawable.post_judgement_of_paris));
+
 
         // RecyclerView 'Padre', que contiene el título y el Recycler View 'Hijo'
         parentModelClassArrayList.add(new ParentModelClass(getResources().getString(R.string.novedades), listaNuevos));
 
-
         // Añadir elementos de muestra
-        listaValorados.add(new ChildModelClass(R.drawable.post_avatar));
+        listaValorados.add(new ChildModelClass(R.drawable.post_bajocero));
         listaValorados.add(new ChildModelClass(R.drawable.post_caballero_luna));
-        listaValorados.add(new ChildModelClass(R.drawable.post_inception));
+        listaValorados.add(new ChildModelClass(R.drawable.post_buscando_a_nemo));
         listaValorados.add(new ChildModelClass(R.drawable.post_punales_por_la_espalda));
-        listaNuevos.add(new ChildModelClass(R.drawable.post_in_time));
-        listaNuevos.add(new ChildModelClass(R.drawable.post_mision_imposible_fallout));
-        listaNuevos.add(new ChildModelClass(R.drawable.post_matrix_resurrections));
+        listaValorados.add(new ChildModelClass(R.drawable.post_in_time));
+        listaValorados.add(new ChildModelClass(R.drawable.post_john_wick_parabellum));
+        listaValorados.add(new ChildModelClass(R.drawable.post_matrix_resurrections));
 
         // RecyclerView 'Padre', que contiene el título y el Recycler View 'Hijo'
         parentModelClassArrayList.add(new ParentModelClass(getResources().getString(R.string.valoradas), listaValorados));
 
-
         // Añadir elementos de muestra
         listaFavoritos.add(new ChildModelClass(R.drawable.post_matrix));
-        listaFavoritos.add(new ChildModelClass(R.drawable.post_john_wick_parabellum));
+        listaFavoritos.add(new ChildModelClass(R.drawable.post_bajocero));
         listaFavoritos.add(new ChildModelClass(R.drawable.post_buscando_a_nemo));
-        listaFavoritos.add(new ChildModelClass(R.drawable.post_robin_hood));
-        listaNuevos.add(new ChildModelClass(R.drawable.post_in_time));
-        listaNuevos.add(new ChildModelClass(R.drawable.post_mision_imposible_fallout));
-        listaNuevos.add(new ChildModelClass(R.drawable.post_matrix_resurrections));
+        listaFavoritos.add(new ChildModelClass(R.drawable.post_muerte_en_el_nilo));
+        listaFavoritos.add(new ChildModelClass(R.drawable.post_in_time));
+        listaFavoritos.add(new ChildModelClass(R.drawable.post_mision_imposible_fallout));
+        listaFavoritos.add(new ChildModelClass(R.drawable.post_matrix_resurrections));
 
         // RecyclerView 'Padre', que contiene el título y el Recycler View 'Hijo'
         parentModelClassArrayList.add(new ParentModelClass(getResources().getString(R.string.interes), listaFavoritos));
